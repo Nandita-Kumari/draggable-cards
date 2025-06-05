@@ -1,0 +1,50 @@
+/* App.css */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #e9ecf1; /* soft background */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  width: 90%;
+  max-width: 400px;
+  padding: 20px;
+  background: #fdfdfd;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+  text-align: center;
+}
+
+h2 {
+  margin-bottom: 20px;
+  color: #1e2b3c;
+  font-size: 1.7rem;
+}
+
+.card-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  cursor: grab;
+  user-select: none;
+  transition: box-shadow 0.3s ease;
+  font-size: 1.05rem;
+  color: #2d3436;
+}
+
+.card:active {
+  cursor: grabbing;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.2);
+}
